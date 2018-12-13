@@ -1,0 +1,123 @@
+﻿@charset "utf-8";
+/*reset*/
+
+/* CSS reset for c_b */
+body , div , dl , dt , dd , ul , ol , li , h1 , h2 , h3 , h4 , h5 , h6 , pre , form , fieldset , input , textarea , p , blockquote , th , td {margin:0; padding:0;}
+table {border-collapse:collapse; border-spacing:0; width:100%;}
+table th , table td {padding:0px;}
+fieldset , img {border:0;}
+address , caption , cite , code , dfn , em  , th , var {font-style:normal; font-weight:normal;}
+ol , ul {list-style:none;}
+ception , th{text-align:left;}
+q:before , q:after{content:'';}
+abbr , acronym{border:0;}
+a {color:#666; text-decoration:none;}  /*for ie f6n.net*/
+a:focus{outline:none;} /*for ff f6n.net*/
+a:hover {text-decoration:underline;}
+
+/*定位*/
+.tl {text-align:left;}
+.tc {text-align:center;}
+.tr {text-align:right;}
+.bc {margin-left:auto; margin-right:auto;}
+.fl {float:left; display:inline;}
+.fr {float:right; display:inline;}
+.zoom {zoom:1}
+.hidden {visibility:hidden;}
+.vam {vertical-align:middle;}
+.clear{clear:both; height:0; line-height:0; font-size:0;}
+p{ word-spacing:-1.5px;}
+
+-moz-box-sizing:content-box;
+-webkit-box-sizing:content-box;
+box-sizing:content-box;
+
+/*其他*/
+.cur{cursor:pointer};
+
+/*原reset*/
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;} 
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+input,select{vertical-align:middle;}
+body{font:12px/1.231 arial,helvetica,clean,sans-serif;}
+select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}
+table{font-size:inherit;width:100%; border-collapse:collapse;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+/*title*/
+h1 { font-size:32px;}
+h2 { font-size:26px;}
+h3 { font-size:20px;}
+h4 { font-size:14px;}
+h5 { font-size:12px;}
+h6 { font-size:10px;}
+
+
+
+
+#roll_top,#fall,#ct{position:relative;cursor:pointer;height:60px;width:52px}
+#roll_top{background:url(../images/top.gif) no-repeat}
+#fall{background:url(../images/top.gif) no-repeat 0 -80px}
+#ct{background:url(../images/top.gif) no-repeat 0 -40px}
+#roll{display:block;width:15px;margin-right:-558px;position:fixed;right:46%;top:80%;_margin-right:-558px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight*0.8)); z-index:100;}
+
+
+
+
+
+/*end reset*/
+
+
+
+/* CSS Document */
+body{background:#fff; overflow-x:hidden; color:#666; font-size:12px; font-family: "微软雅黑"; position:relative;}/*网站字体颜色*/
+
+.header , .content , .footer , .container{margin-left:auto; margin-right:auto; width:1000px;}
+
+/*页眉*/
+.header{width:100%; overflow:hidden; background-color:#fff;}
+
+.header_top { width:100%; height:45px; background:url(../images/header_top.png) repeat-x left bottom; background-color:#f0f0f0;}
+.header_top p{ float:left; line-height:45px; font-size:13px; color:#666;}
+.header_top ul{ float:right; width:210px; margin-top:12px; font-size:13px;}
+.header_top li{ float:left; padding:0 10px; border-right:1px solid #c7c7c7; position:relative}
+.header_top li.last{ border:none; padding-right:0;}
+.header_top li a{ color:#666}
+/*.header_top li img{ display:none; position:absolute; top:30px; left:-20px;}
+.header_top li:hover img{ display:block}*/
+
+.header_center { overflow:hidden; width:1000px; margin:0 auto; height:105px;}
+.header_center h1{ float:left; margin-top:10px;}
+.header_center h2{ float:left; margin-top:22px; margin-left:10px; padding-left:15px; border-left:1px dotted #d9d9d9; font-size:22px; color:#c81624;}
+.header_center h2 p{ font-weight:normal; font-size:18px; color:#000;}
+.header_center .phone{ overflow:hidden; float:right; padding-left:50px; background:url(../images/phone.png) no-repeat left center; margin-top:30px;    margin-right: 34px}
+.header_center .phone p{ font-size:13px; color:#000;}
+.header_center .phone b{ display:block; font-size:22px; color:#c81624; font-family:Arial; margin-top:5px;}
+
+.header_nav { overflow:hidden; width:100%; height:60px; line-height:60px; font-weight: bold; background-color:#c81624;}
+.header_nav ul{ overflow:hidden}
+
+/*
+.header_nav li{ float:left; font-size:15px;}*/
+
+.header_nav li{ display:inline-block; font-size:14px; padding:0 20px; margin:0 -2px; border-right:1px solid #aa4400; opacity:0.9; filter:alpha(opacity=90)}
+.header_nav li{ *display:inline}
+.header_nav .last{ border:none}
+
+.header_nav a{ display:block; color:#fff; text-decoration:none}
+.header_nav li:hover,.header_nav li.cur{ background-color:#252525;}
+
+/*footer*/
+.footer { overflow:hidden; width:100%; padding-top:50px; background-color:#252525;}
+.footer .fnav{ overflow:hidden; width:100%; text-align:center; margin-bottom:20px;}
+.footer .fnav li{ display:inline-block; font-size:14px; padding:0 20px; margin:0 -2px; border-right:1px solid #3b3b3b; opacity:0.9; filter:alpha(opacity=90)}
+.footer .fnav li{ *display:inline}
+.footer .fnav li a{ color:#fff;}
+.footer .fnav .last{ border:none}
+.footer .fInfo { overflow:hidden; width:624px; margin:0 auto; margin-bottom:60px;}
+.footer .fInfo img{ display:block; float:left}
+.footer .fInfo .wen{ overflow:hidden; float:left; margin-left:25px; width:402px;}
+.footer .fInfo .wen p{ font-size:13px; color:#fff; margin-top:10px; opacity:0.7; filter:alpha(opacity=70)}
+.footer .fInfo .wen a{ color:#fff;}
+.footer .fInfo .wen i{ margin:0 10px;}
