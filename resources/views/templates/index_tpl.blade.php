@@ -15,19 +15,19 @@
             </div>
             <div class="col-xs-12 col-md-3 col-large-3 content-1">
                 <div class="content-img">
-                    <img src="images/icon1.png">
+                    <img src="{{asset('public/images/icon1.png')}}">
                 </div>
                 <h4>Lắp đặt chuyên nghiệp</h4>
             </div>
             <div class="col-xs-12 col-md-3 col-large-3 content-1">
                 <div class="content-img">
-                    <img src="images/icon2.png">
+                    <img src="{{asset('public/images/icon2.png')}}">
                 </div>
                 <h4>Lắp đặt chuyên nghiệp</h4>
             </div>
             <div class="col-xs-12 col-md-3 col-large-3 content-1">
                 <div class="content-img">
-                    <img src="images/icon3.png">
+                    <img src="{{asset('public/images/icon3.png')}}">
                 </div>
                 <h4>Lắp đặt chuyên nghiệp</h4>
             </div>
@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-4 col-large-4 images-ct">
                         <div class="content-img1">
-		                            <a href="#"><img src="{{asset('public/images/ct.png')"></a>
+		                    <a href="#"><img src="{{asset('public/images/ct.png')"></a>
                         </div>
                         <div class="title">
                             <a href="#"><h4>I'm crazy</h4></a>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-xs-12 col-md-4 col-large-4 images-ct">
                         <div class="content-img1">
-		                            <a href="#"><img src="{{asset('public/images/ct.png')"></a>
+		                    <a href="#"><img src="{{asset('public/images/ct.png')"></a>
                         </div>
                         <div class="title">
                             <a href="#"><h4>I'm crazy</h4></a>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-xs-12 col-md-4 col-large-4 images-ct">
                         <div class="content-img1">
-		                            <a href="#"><img src="{{asset('public/images/ct.png')"></a>
+		                    <a href="#"><img src="{{asset('public/images/ct.png')"></a>
                         </div>
                         <div class="title">
                             <a href="#"><h4>I'm crazy</h4></a>
