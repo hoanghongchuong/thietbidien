@@ -25,18 +25,18 @@ class SloganController extends Controller
             $img_name=time().'_'.$img->getClientOriginalName();
             $img->move($path_img,$img_name);
         }
-        $img2 = $request->file('fImages2');
-        $img_name2='';
-        if(!empty($img2)){
-            $img_name2=time().'_'.$img2->getClientOriginalName();
-            $img2->move($path_img,$img_name2);
-        }
+        // $img2 = $request->file('fImages2');
+        // $img_name2='';
+        // if(!empty($img2)){
+        //     $img_name2=time().'_'.$img2->getClientOriginalName();
+        //     $img2->move($path_img,$img_name2);
+        // }
         
     	$slogan = new Slogan;
         $slogan->name = $request->txtName;
     	$slogan->link = $request->link;
         $slogan->photo = $img_name; 
-        $slogan->photo2 = $img_name2;
+        // $slogan->photo2 = $img_name2;
         $slogan->stt = intval($request->stt);
     	$slogan->content = $request->content;
         // dd($slogan);
@@ -63,17 +63,17 @@ class SloganController extends Controller
             }
         }
 
-        $img2 = $request->file('fImages2');
-        $img_current2 = 'upload/hinhanh/'.$request->img_current2;
-        if(!empty($img2)){
-            $path_img='upload/hinhanh';
-            $img_name2=time().'_'.$img2->getClientOriginalName();
-            $img2->move($path_img,$img_name2);
-            $slogan->photo2 = $img_name2;
-            if (File::exists($img_current2)) {
-                File::delete($img_current2);
-            }
-        }
+        // $img2 = $request->file('fImages2');
+        // $img_current2 = 'upload/hinhanh/'.$request->img_current2;
+        // if(!empty($img2)){
+        //     $path_img='upload/hinhanh';
+        //     $img_name2=time().'_'.$img2->getClientOriginalName();
+        //     $img2->move($path_img,$img_name2);
+        //     $slogan->photo2 = $img_name2;
+        //     if (File::exists($img_current2)) {
+        //         File::delete($img_current2);
+        //     }
+        // }
     	$slogan->name = $request->txtName;
         $slogan->link = $request->link;
     	$slogan->content = $request->content;

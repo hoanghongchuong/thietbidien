@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="form-group ">
+            <!-- <div class="form-group ">
                 <div class="form-group" >
                   <div class="form-group">
                     <img src="{{ asset('upload/hinhanh/'.@$slogan->photo2) }}" onerror="this.src='{{asset('public/admin_assets/images/no-image.jpg')}}'" width="200"  alt="NO PHOTO" />
@@ -46,7 +46,7 @@
                     <input type="file" id="file" name="fImages2" >
                     <p class="help-block">Width:225px - Height: 162px</p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="col-md-6">
               <div class="form-group">

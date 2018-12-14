@@ -6,3 +6,22 @@
 	width: 100%;
 	height: 265px;
 }
+.content-img1 img{
+	height: 220px;
+}
+.map-footer iframe{
+	width: 570px !important;
+	height: 450px !important;
+}
+.content-3 p{
+	margin-bottom: 10px;
+}
+.content-3 h3{
+	margin-top: 20px;
+}
+.uudiem{
+	padding-left: 20px;
+}
+.uudiem li{
+	list-style: disc;
+}

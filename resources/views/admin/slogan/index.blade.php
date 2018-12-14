@@ -28,8 +28,8 @@
                 <!-- <th style="width: 20px;"><input type="checkbox" name="chonhet" class="minimal" id="chonhet" /></th> -->
                 <th class="text-center with_dieuhuong">Stt</th>
                 <th>Hình ảnh</th>
-                <!-- <th>Tên</th> -->
-                <th>Nội dung</th>
+                <th>Tên</th>
+                <!-- <th>Nội dung</th> -->
                 <th class="text-center with_dieuhuong">Sửa</th>
                 <th class="text-center with_dieuhuong">Xóa</th>
               </tr>
@@ -40,8 +40,8 @@
                 
                 <td>{{ $key+1 }}</td>
                 <td><img src="{{asset('upload/hinhanh/'.$item->photo)}}" class="img_product" alt=""></td>
-                <!-- <td>{{$item->name}}</td>   -->
-                <td>{!!$item->content!!}</td>         
+                <td>{{$item->name}}</td>  
+                <!-- <td>{!!$item->content!!}</td>          -->
                 <td class="text-center with_dieuhuong">
                   <i class="fa fa-pencil fa-fw"></i><a href="{{asset('backend/slogan/edit/'.$item->id)}}">Edit</a>
                 </td>
